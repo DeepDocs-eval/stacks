@@ -9,12 +9,12 @@ bun add @stacksjs/cloud
 ```
 
 ## Basic Usage
-
 ```typescript
 import { Cloud } from '@stacksjs/cloud'
 
 // Deploy application to AWS
-await Cloud.deploy({
+const cloud = new Cloud()
+await cloud.deploy({
   environment: 'production',
   region: 'us-east-1'
 })

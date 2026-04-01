@@ -38,10 +38,10 @@ route.get('/users/{id}', (request) => {
 })
 
 // Different HTTP methods
-route.post('/users', 'Actions/User/CreateUserAction')
-route.put('/users/{id}', 'Actions/User/UpdateUserAction')
-route.patch('/users/{id}', 'Actions/User/PatchUserAction')
-route.delete('/users/{id}', 'Actions/User/DeleteUserAction')
+route.post('/users', 'User/CreateUserAction')
+route.put('/users/{id}', 'User/UpdateUserAction')
+route.patch('/users/{id}', 'User/PatchUserAction')
+route.delete('/users/{id}', 'User/DeleteUserAction')
 ```
 
 ### Route Groups
